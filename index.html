@@ -6,10 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu perfil</title>
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
 <body>
-    <ul>
+    <ul id="menu">
         <li>
             <a href="index.html"> Home</a>
         <li>
@@ -20,26 +21,46 @@
         </li>
     </ul>
 
-    <h1>Olá mundo</h1>
-    <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium necessitatibus
-        doloribus mollitia! Maiores aliquam ipsa quis, aperiam modi ducimus, consectetur,
-        ut id mollitia molestiae quo dolorem?
-    </p>
-    <p>
-        A veritatis distinctio cumque! Lorem ipsum
-        dolor sit amet consectetur adipisicing elit. Cum fugiat iure enim. Sequi reprehenderit
-        impedit necessitatibus officia deleniti tenetur quam ex voluptate eius beatae eligendi harum,
-        rem cumque, obcaecati similique.
-    </p>
+    <h1 class="center">Olá mundo</h1>
+    <div class="container">
+        <div class="p-30">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium necessitatibus
+            doloribus mollitia! Maiores aliquam ipsa quis, aperiam modi ducimus, consectetur,
+            ut id mollitia molestiae quo dolorem?
+            </p>
+            <p>
+                A veritatis distinctio cumque! Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Cum fugiat iure enim. Sequi reprehenderit
+                impedit necessitatibus officia deleniti tenetur quam ex voluptate eius beatae eligendi harum,
+                rem cumque, obcaecati similique.
+            </p>
+        </div>
+        <div>
+            <img class="br-50 wh-300 p-30" src="./assets/img/perfil.jfif" alt="Foto da criadora deste conteúdo">
+        </div>
 
-    <img src="./assets/perfil.jfif" alt="Foto da criadora deste conteúdo">
+    </div>
 
-    <h2>Meu vídeo favorito</h2>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/psGDf2VrvK8" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
+    <h2 class="center">Meu vídeo favorito</h2>
+    <div class="container mb-50">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/psGDf2VrvK8" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </div>
+    <hr>
+    <footer>
+        <div class="container">
+            <a href="https://www.instagram.com/azoubelfernanda/">
+                <img class="tm-redes p-30" src="assets/img/instagram.png" alt="Logo do Instagram"></a>
+
+
+            <a href="https://www.linkedin.com/in/azoubelfernanda/">
+                <img class="tm-redes p-30" src="assets/img/linkedin.png" alt="Logo do Linkedin"></a>
+        </div>
+        <p class="center">Todos os direitos reservados para: Fernanda Azoubel &copy;</p>
+    </footer>
 
 </body>
 
