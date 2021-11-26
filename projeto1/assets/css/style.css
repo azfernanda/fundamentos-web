@@ -1,3 +1,13 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap);
+
+* {
+    font-family: 'Montserrat', sans-serif;;
+}
+
+body {
+    background-color: #FFF1AF;
+    color: #66806A
+}
 /*
 Estilos da página index.html
 */
@@ -17,25 +27,26 @@ Estilos da página index.html
 
 #menu li a {
     text-decoration: none;
-    color: black;
+    color: #B4C6A6;
     font-size: 20px;
 }
 
 #menu li a:hover {
-    color: gray;
+    color: #FFC286;
 }
 
 .p-30 {
-    padding: 50px;
+    padding: 30px;
 }
 
-.br-50 {
-    border-radius: 30%;
+.p-100 {
+    padding: 100px;
 }
 
-.wh-300 {
-    width: 300;
-    height: 300;
+.foto {
+    padding-right: 100px;
+    width: 200px;
+    height: 200px;
 }
 
 .tm-redes {
@@ -55,3 +66,9 @@ Estilos da página contato.html
 /*
 Estilos da página listafilmes.html
 */
+.filmes {
+    display:block;
+    justify-content: center;
+    padding-left: 100px;
+    padding-right: 100px;
+}

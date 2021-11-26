@@ -25,29 +25,30 @@
     <div class="container mb-50">
         <form>
             <label for="nome">Nome:</label>
-
-            <input type="text" id="nome">
+            <input type="text" id="nome" onkeyup="validaNome()">
+            <div id="txtNome"></div>
             <br>
             <label for="email">E-mail:</label>
-
-            <input type="email" id="email">
+            <input type="email" id="email" onkeyup="validaEmail()">
+            <div id="txtEmail"></div>
             <br>
             <label for="assunto">Assunto:</label>
+            <textarea name="assunto" id="assunto" cols="60" rows="5" onkeyup="validaAssunto()"></textarea>
+            <div id="txtAssunto"></div>
 
-            <textarea name="assunto" id="assunto" cols="60" rows="5"></textarea>
             <br>
-            <button>Enviar!</button>
+            <button onclick="enviar()">Enviar!</button>
         </form>
     </div>
 
-    <div class="mb-50">
+    <div class="center mb-50">
         <h2>Endereço</h2>
         <p>Strada General Traian Moșoiu 24, Bran 507025, Romênia</p>
         <p>Referência: Castelo do Drácula.</p>
 
         <iframe
             src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d11183.04149436684!2d25.3671637!3d45.5149022!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcf922792d921ab7f!2sCastelo%20de%20Bran!5e0!3m2!1spt-BR!2sbr!4v1637688861004!5m2!1spt-BR!2sbr"
-            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id="mapa"></iframe>
     </div>
 
     <hr>
@@ -62,6 +63,8 @@
         </div>
         <p class="center">Todos os direitos reservados para: Fernanda Azoubel &copy;</p>
     </footer>
+
+    <script src="./assets/js/script.js"></script>
 
 </body>
 
